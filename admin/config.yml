@@ -1,0 +1,164 @@
+# Decap CMS configuration.
+# This connects the /admin panel to your site's files (via Netlify Git Gateway).
+# Field names match the JSON files in /data so the website reads your edits.
+
+backend:
+  name: git-gateway
+  branch: main            # change to "master" if your repo's default branch is master
+
+media_folder: "assets/images/uploads"   # where uploaded images are stored in the repo
+public_folder: "/assets/images/uploads" # the path the website uses to show them
+
+status_options: []
+
+collections:
+  - name: "pages"
+    label: "Pages & Settings"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "data/home.json"
+        fields:
+          - { label: "Hero title", name: "hero_title", widget: "string" }
+          - { label: "Hero subtitle", name: "hero_subtitle", widget: "string" }
+          - { label: "Hero tagline", name: "hero_tagline", widget: "text" }
+          - { label: "Author photo", name: "author_photo", widget: "image", required: false }
+          - { label: "Welcome heading", name: "welcome_heading", widget: "string" }
+          - { label: "Welcome text", name: "welcome_text", widget: "text" }
+      - name: "about"
+        label: "About Page"
+        file: "data/about.json"
+        fields:
+          - { label: "Portrait photo", name: "portrait", widget: "image", required: false }
+          - { label: "Bio", name: "bio", widget: "text" }
+          - { label: "Personal note", name: "personal_note", widget: "text", required: false }
+          - { label: "Writing journey", name: "writing_journey", widget: "text", required: false }
+          - { label: "Self-publishing experience", name: "self_publishing", widget: "text", required: false }
+          - { label: "Future goals", name: "future_goals", widget: "text", required: false }
+      - name: "contact"
+        label: "Contact Page"
+        file: "data/contact.json"
+        fields:
+          - { label: "Intro text", name: "intro", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Amazon author page URL", name: "amazon_author_url", widget: "string", required: false }
+          - label: "Social / external links"
+            name: "social_links"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+      - name: "footer"
+        label: "Footer"
+        file: "data/footer.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Domain", name: "domain", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+      - name: "media"
+        label: "Media / Visual Inspiration"
+        file: "data/media.json"
+        fields:
+          - { label: "Note", name: "note", widget: "text" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Section name", name: "name", widget: "string" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                required: false
+                field: { label: "Image", name: "image", widget: "image" }
+
+  - name: "books"
+    label: "Books"
+    files:
+      - name: "books"
+        label: "All Books"
+        file: "data/books.json"
+        fields:
+          - label: "Books"
+            name: "books"
+            widget: "list"
+            label_singular: "Book"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Status", name: "status", widget: "select", options: ["Published", "Available Now", "In Progress", "Querying Agents", "Drafting", "Revising", "Coming Soon", "On Hold"] }
+              - { label: "Genre", name: "genre", widget: "string", required: false }
+              - { label: "Cover image", name: "cover", widget: "image", required: false }
+              - { label: "Short description", name: "short_description", widget: "text" }
+              - { label: "Long description", name: "long_description", widget: "text", required: false }
+              - { label: "Back cover description", name: "back_cover_description", widget: "text", required: false }
+              - label: "Purchase links"
+                name: "purchase_links"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL (leave blank to hide)", name: "url", widget: "string", required: false }
+              - { label: "Audiobook link", name: "audiobook_link", widget: "string", required: false }
+              - { label: "Trailer / video link", name: "trailer_link", widget: "string", required: false }
+              - { label: "Audiobook update note", name: "audiobook_update", widget: "string", required: false }
+              - { label: "Sample excerpt", name: "excerpt", widget: "text", required: false }
+              - label: "Visual inspiration gallery"
+                name: "gallery"
+                widget: "list"
+                required: false
+                field: { label: "Image", name: "image", widget: "image" }
+
+  - name: "projects"
+    label: "Projects (Works in Progress & The Whisperer)"
+    files:
+      - name: "projects"
+        label: "All Projects"
+        file: "data/projects.json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            label_singular: "Project"
+            fields:
+              - { label: "Slug (unique id, e.g. the-whisperer)", name: "slug", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Status", name: "status", widget: "select", options: ["Published", "Available Now", "In Progress", "Querying Agents", "Drafting", "Revising", "Coming Soon", "On Hold"] }
+              - { label: "Genre", name: "genre", widget: "string", required: false }
+              - { label: "Short description", name: "short_description", widget: "text" }
+              - { label: "Long description", name: "long_description", widget: "text", required: false }
+              - label: "Themes"
+                name: "themes"
+                widget: "list"
+                required: false
+                field: { label: "Theme", name: "theme", widget: "string" }
+              - { label: "Progress / status notes", name: "progress_notes", widget: "text", required: false }
+              - { label: "Sample excerpt", name: "excerpt", widget: "text", required: false }
+              - { label: "Disclaimer", name: "disclaimer", widget: "text", required: false }
+              - label: "Character inspiration images"
+                name: "character_images"
+                widget: "list"
+                required: false
+                field: { label: "Image", name: "image", widget: "image" }
+              - label: "World / scene inspiration images"
+                name: "inspiration_images"
+                widget: "list"
+                required: false
+                field: { label: "Image", name: "image", widget: "image" }
+              - { label: "Show on Works in Progress page", name: "show_in_wip", widget: "boolean", default: true }
+
+  - name: "news"
+    label: "News / Updates"
+    files:
+      - name: "news"
+        label: "All Updates"
+        file: "data/news.json"
+        fields:
+          - label: "Updates"
+            name: "news"
+            widget: "list"
+            label_singular: "Update"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["Book Updates", "Query Updates", "Audiobook Updates", "Publishing News", "Behind the Story", "Writing Progress", "Events / Announcements"] }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Update text", name: "body", widget: "text" }

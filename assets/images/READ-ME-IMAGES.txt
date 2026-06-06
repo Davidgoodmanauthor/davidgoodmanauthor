@@ -1,0 +1,15 @@
+PUT YOUR IMAGE FILES IN THIS FOLDER
+===================================
+
+Drop your photos here (jpg or png), then reference the file name in
+   assets/js/data.js
+
+Examples:
+  - Author photo:  save as  david.jpg  -> in data.js set  "author_photo": "assets/images/david.jpg"
+  - Book cover:    save as  echoes-cover.jpg  -> in books set  "cover": "assets/images/echoes-cover.jpg"
+  - Gallery:       save several images, then list them, e.g.
+                   "gallery": ["assets/images/echoes1.jpg", "assets/images/echoes2.jpg"]
+
+Tips:
+  - Keep file names lowercase, no spaces (use dashes).
+  - Resize large photos to about 1600px wide so the site loads fast.
