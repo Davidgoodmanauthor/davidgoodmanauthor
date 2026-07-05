@@ -1,34 +1,6 @@
 {
   "books": [
     {
-      "excerpt": "",
-      "genre": "Post-apocalyptic survival fiction",
-      "trailer_link": "",
-      "audiobook_update": "Audiobook is in progress — updates coming soon.",
-      "gallery": [],
-      "status": "Available Now",
-      "cover": "",
-      "title": "Echoes of Life: The End of Humanity",
-      "short_description": "Echoes of Life: The End of Humanity is a post-apocalyptic survival story about loneliness, danger, hope, and the fight to keep going when the world has fallen apart.",
-      "long_description": "",
-      "audiobook_link": "",
-      "purchase_links": [
-        {
-          "label": "Amazon Paperback",
-          "url": ""
-        },
-        {
-          "label": "Amazon Hardcover",
-          "url": ""
-        },
-        {
-          "label": "Kindle",
-          "url": ""
-        }
-      ],
-      "back_cover_description": ""
-    },
-    {
       "title": "Echoes of Life: The End of Humanity ",
       "status": "Available Now",
       "genre": "Dystopian",
