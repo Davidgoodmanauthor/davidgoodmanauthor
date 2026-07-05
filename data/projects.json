@@ -1,52 +1,70 @@
 {
   "projects": [
     {
-      "slug": "the-whisperer",
-      "title": "The Whisperer and the Great Moon Flower",
-      "status": "Querying Agents",
+      "excerpt": "",
       "genre": "Children's picture book",
+      "show_in_wip": false,
+      "themes": [
+        "Bullying",
+        "Self-doubt",
+        "Being different",
+        "Kindness",
+        "Courage",
+        "Self-acceptance",
+        "Emotional resilience",
+        "Discovering that what others see as a flaw may be what makes someone special"
+      ],
+      "slug": "The-Whisperer",
+      "inspiration_images": [
+        "/assets/images/uploads/13203.jpg"
+      ],
+      "character_images": [
+        "/assets/images/uploads/12230.png"
+      ],
+      "progress_notes": "Currently being queried to literary agents and seeking traditional publishing.",
+      "status": "Querying Agents",
       "cover": "",
+      "title": "The Whisperer and the Great Moon Flower",
       "short_description": "A heartfelt picture book about Dan, a young Whisperer who is mocked for his giant ears — until a devastating flood threatens his forest community.",
       "long_description": "The Whisperer and the Great Moon Flower is a heartfelt picture book about Dan, a young Whisperer who is mocked for his giant ears. When a devastating flood threatens his forest community, Dan must learn to believe in himself and use the very thing everyone laughed at to save them.",
-      "themes": ["Bullying", "Self-doubt", "Being different", "Kindness", "Courage", "Self-acceptance", "Emotional resilience", "Discovering that what others see as a flaw may be what makes someone special"],
-      "progress_notes": "Currently being queried to literary agents and seeking traditional publishing.",
-      "excerpt": "",
-      "disclaimer": "Visual artwork shown here is inspiration only. Final illustration direction may be guided by a future publisher.",
-      "character_images": [],
-      "inspiration_images": [],
-      "show_in_wip": false
+      "disclaimer": "Visual artwork shown here is inspiration only. Final illustration direction may be guided by a future publisher."
     },
     {
-      "slug": "vampire-novel",
-      "title": "Vampire Novel",
-      "status": "In Progress",
+      "excerpt": "",
       "genre": "Dark fantasy / vampire fiction",
+      "show_in_wip": true,
+      "themes": [
+        "Ancient power",
+        "Blood abilities",
+        "Moral conflict",
+        "Self-discovery"
+      ],
+      "slug": "",
+      "inspiration_images": [],
+      "character_images": [],
+      "progress_notes": "In active development. Working title and further details to come.",
+      "status": "In Progress",
       "cover": "",
+      "title": "The Fang: Unlocking the Blood of the Beast ",
       "short_description": "A dark fantasy vampire story involving ancient power, blood abilities, moral conflict, and a young woman named Aria who must discover what she is capable of becoming.",
       "long_description": "A dark fantasy vampire story involving ancient power, blood abilities, moral conflict, and a young woman named Aria who must discover what she is capable of becoming.",
-      "themes": ["Ancient power", "Blood abilities", "Moral conflict", "Self-discovery"],
-      "progress_notes": "In active development. Working title and further details to come.",
-      "excerpt": "",
-      "disclaimer": "",
-      "character_images": [],
-      "inspiration_images": [],
-      "show_in_wip": true
+      "disclaimer": ""
     },
     {
-      "slug": "future-projects",
-      "title": "Future Projects",
-      "status": "Coming Soon",
+      "excerpt": "",
       "genre": "",
+      "show_in_wip": true,
+      "themes": [],
+      "slug": "future-projects",
+      "inspiration_images": [],
+      "character_images": [],
+      "progress_notes": "",
+      "status": "Coming Soon",
       "cover": "",
+      "title": "Future Projects",
       "short_description": "A place for future stories, novels, picture books, and creative projects.",
       "long_description": "A place for future stories, novels, picture books, and creative projects.",
-      "themes": [],
-      "progress_notes": "",
-      "excerpt": "",
-      "disclaimer": "",
-      "character_images": [],
-      "inspiration_images": [],
-      "show_in_wip": true
+      "disclaimer": ""
     }
   ]
 }
