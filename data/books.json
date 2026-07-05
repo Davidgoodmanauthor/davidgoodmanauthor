@@ -1,23 +1,47 @@
 {
   "books": [
     {
-      "title": "Echoes of Life: The End of Humanity",
-      "status": "Available Now",
+      "excerpt": "",
       "genre": "Post-apocalyptic survival fiction",
-      "cover": "",
-      "short_description": "Echoes of Life: The End of Humanity is a post-apocalyptic survival story about loneliness, danger, hope, and the fight to keep going when the world has fallen apart.",
-      "long_description": "",
-      "back_cover_description": "",
-      "purchase_links": [
-        { "label": "Amazon Paperback", "url": "" },
-        { "label": "Amazon Hardcover", "url": "" },
-        { "label": "Kindle", "url": "" }
-      ],
-      "audiobook_link": "",
       "trailer_link": "",
       "audiobook_update": "Audiobook is in progress — updates coming soon.",
-      "excerpt": "",
-      "gallery": []
+      "gallery": [],
+      "status": "Available Now",
+      "cover": "",
+      "title": "Echoes of Life: The End of Humanity",
+      "short_description": "Echoes of Life: The End of Humanity is a post-apocalyptic survival story about loneliness, danger, hope, and the fight to keep going when the world has fallen apart.",
+      "long_description": "",
+      "audiobook_link": "",
+      "purchase_links": [
+        {
+          "label": "Amazon Paperback",
+          "url": ""
+        },
+        {
+          "label": "Amazon Hardcover",
+          "url": ""
+        },
+        {
+          "label": "Kindle",
+          "url": ""
+        }
+      ],
+      "back_cover_description": ""
+    },
+    {
+      "title": "Echoes of Life: The End of Humanity ",
+      "status": "Available Now",
+      "genre": "Dystopian",
+      "cover": "/assets/images/uploads/14577.jpg",
+      "short_description": "Through one man’s eyes, we witness a harrowing world overrun by fast, predatory creatures—beings that never rot, only hunt. As he navigates this desolate, dystopian landscape, his journey is more than survival—it’s a relentless search to reconnect with anyone still out there. In a world stripped bare, his hope is to find something more.",
+      "long_description": "Fast. Deadly. Always hunting.\n\nTake the journey with David as he emerges from his bunker nearly a year after the world collapsed, stepping back into a world that no longer belongs to the living. Cities once filled with voices, movement, and life now sit in silence, swallowed by a dystopian nightmare where every sound can bring death.\n\nThe dead do not rot. They do not stumble. They are fast, predatory creatures driven by noise, movement, and hunger. They hunt without mercy, turning the world outside David’s bunker into a place where one wrong step could be his last.\n\nBut for David, survival is no longer enough. After months of isolation, loneliness has become its own kind of enemy, slowly eating away at his will to keep going. As he moves from place to place, searching through the ruins of what used to be civilization, he is driven by one desperate hope: that someone, somewhere, is still alive.\n\nIn a world stripped of comfort, safety, and connection, David must face not only the creatures that hunt him, but the growing fear that being the last one left may be worse than death itself.",
+      "trailer_link": "https://www.tiktok.com/t/ZTSaD4Sp8/",
+      "purchase_links": [
+        {
+          "label": "Buy on Amazon ",
+          "url": "https://www.amazon.com/Echoes-Life-Humanity-David-Goodman/dp/B0GY2FHCD6/ref=mp_s_a_1_1?crid=OU88DBFQKJDO&dib=eyJ2IjoiMSJ9.Bw4Cc8GKSyopcnjqYDAMvm8GoVWfsFmghsQGe3P6EIglEA9eYsyfWEuLYWLeqIk9iErYMVTwDn3vsx37hmAVCWzPLLPRi489hWNDZOxGgyZwuSZJz1jKbIWzqp74V2KRZ9N643nyKPA9b7qDuAF0lOvu4PZsUMd_0FF_3cSc-8WFfI4pjmeST_86ItKGsmWtYlJ4q1OQ5JJ_mr6PuWu_KA.zU2RBwigVgOhwgLAhP7wgYRnHKF0eNlnbcjL41vNOxU&dib_tag=se&keywords=echoes+of+life+the+end+of+humanity&qid=1783226885&sprefix=echoes+of+Life+The+%2Caps%2C223&sr=8-1"
+        }
+      ]
     }
   ]
 }
