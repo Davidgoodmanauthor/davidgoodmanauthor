@@ -101,6 +101,10 @@ collections:
               - { label: "Audiobook link", name: "audiobook_link", widget: "string", required: false }
               - { label: "Trailer / video link", name: "trailer_link", widget: "string", required: false }
               - { label: "Audiobook update note", name: "audiobook_update", widget: "string", required: false }
+              - { label: "Audiobook update note", name: "audiobook_update", widget: "string", required: false }
+              - { label: "Extra button — note / warning (optional, appears above the button)", name: "custom_button_note", widget: "text", required: false }
+              - { label: "Extra button — text (e.g. Enter the Experience)", name: "custom_button_label", widget: "string", required: false }
+              - { label: "Extra button — link (the URL / subdomain it points to)", name: "custom_button_url", widget: "string", required: false }
               - { label: "Sample excerpt", name: "excerpt", widget: "text", required: false }
               - label: "Visual inspiration gallery"
                 name: "gallery"
