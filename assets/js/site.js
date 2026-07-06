@@ -46,6 +46,9 @@
     });
     if (b.audiobook_link) out.push('<a class="btn btn-outline" href="' + esc(b.audiobook_link) + '" target="_blank" rel="noopener">Audiobook</a>');
     if (b.trailer_link) out.push('<a class="btn btn-ghost" href="' + esc(b.trailer_link) + '" target="_blank" rel="noopener">Watch Trailer</a>');
+     if (b.custom_button_label && b.custom_button_url) {
+      out.push('<a class="btn btn-accent" href="' + esc(b.custom_button_url) + '" target="_blank" rel="noopener">' + esc(b.custom_button_label) + "</a>");
+     }
     if (!out.length) return '<p class="muted">Purchase links will be added here soon.</p>';
     return '<div class="btn-row">' + out.join("") + "</div>";
   }
